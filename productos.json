@@ -9,5 +9,16 @@
     "stock": 10,
     "category": "Electrónica",
     "thumbnails": []
+  },
+  {
+    "id": 2,
+    "title": "Nuevo Producto 2",
+    "description": "Descripción del producto",
+    "code": "ZYZ123",
+    "price": 200,
+    "status": true,
+    "stock": 5,
+    "category": "Iluminación",
+    "thumbnails": []
   }
 ]
