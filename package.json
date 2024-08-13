@@ -1,0 +1,15 @@
+{
+  "name": "preentrega1-nuciforo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Juan Cruz Nuciforo",
+  "license": "ISC",
+  "description": "Pre Entrega numero 1 de Backend I",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
