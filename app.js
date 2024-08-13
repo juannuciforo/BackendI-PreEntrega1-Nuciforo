@@ -176,6 +176,8 @@ class CartManager {
 
 const cartManager = new CartManager();
 
+// Rutas para carts
+
 // Ruta para crear un nuevo carrito
 app.post('/api/carts/', (req, res) => {
   try {
