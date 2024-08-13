@@ -13,7 +13,7 @@ const cartsFilePath = 'carrito.json';
 // Funciones auxiliares
 const readDataFromFile = (filePath) => {
   try {
-    const data = fs.readFile(filePath, 'utf8');
+    const data = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(data);
   } catch (error) {
     return [];
@@ -21,7 +21,7 @@ const readDataFromFile = (filePath) => {
 };
 
 const writeDataToFile = (filePath, data) => {
-  fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf8');
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
 };
 
 class ProductManager {
