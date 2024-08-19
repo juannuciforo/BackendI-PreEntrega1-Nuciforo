@@ -5,11 +5,11 @@ const ProductManager = require('../models/productManager');
 const productManager = new ProductManager();
 
 // Rutas para products
-router.get('/api/products/', (req, res) => {
+router.get('/', (req, res) => {
     res.json(productManager.getProducts());
 });
 
-router.get('/api/products/:pid', (req, res) => {
+router.get('/:pid', (req, res) => {
     try {
       const product = productManager.getProductById(req.params.pid);
       res.json(product);
@@ -18,7 +18,7 @@ router.get('/api/products/:pid', (req, res) => {
     }
 });
 
-router.post('/api/products/', (req, res) => {
+router.post('/', (req, res) => {
     try {
       const newProduct = productManager.addProduct(req.body);
       res.status(201).json(newProduct);
@@ -27,7 +27,7 @@ router.post('/api/products/', (req, res) => {
     }
 });
 
-router.put('/api/products/:pid', (req, res) => {
+router.put('/:pid', (req, res) => {
     const { pid } = req.params;
     const productIndex = productManager.products.findIndex(product => product.id == pid);
     
@@ -44,7 +44,7 @@ router.put('/api/products/:pid', (req, res) => {
     res.json(productManager.products[productIndex]);
 });
 
-router.delete('/api/products/:pid', (req, res) => {
+router.delete('/:pid', (req, res) => {
     const { pid } = req.params;
     const productIndex = productManager.products.findIndex(product => product.id == pid);
     

@@ -1,6 +1,6 @@
 const { readDataFromFile, writeDataToFile } = require('../utils/fileHandler');
 const path = require('path');
-const productsFilePath = path.join(__dirname, '../data/products.json');
+const productsFilePath = path.join(__dirname, '../data/productos.json');
 
 
 class ProductManager {

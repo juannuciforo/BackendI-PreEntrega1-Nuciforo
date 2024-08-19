@@ -1,6 +1,6 @@
 const { readDataFromFile, writeDataToFile } = require('../utils/fileHandler');
 const path = require('path');
-const cartsFilePath = path.join(__dirname, '../data/carts.json');
+const cartsFilePath = path.join(__dirname, '../data/carrito.json');
 
 
 class CartManager {
